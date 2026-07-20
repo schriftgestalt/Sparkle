@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="24412" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES">
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="24765" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES">
     <dependencies>
         <deployment identifier="macosx"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="24412"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="24765"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -25,18 +25,17 @@
             <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
             <windowCollectionBehavior key="collectionBehavior" fullScreenAuxiliary="YES"/>
             <windowPositionMask key="initialPositionMask" topStrut="YES" bottomStrut="YES"/>
-            <rect key="contentRect" x="746" y="229" width="532" height="370"/>
-            <rect key="screenRect" x="0.0" y="0.0" width="1470" height="922"/>
-            <value key="minSize" type="size" width="462" height="150"/>
-            <view key="contentView" misplaced="YES" id="6">
-                <rect key="frame" x="0.0" y="0.0" width="532" height="370"/>
-                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <rect key="contentRect" x="746" y="229" width="600" height="468"/>
+            <rect key="screenRect" x="0.0" y="0.0" width="1728" height="1084"/>
+            <value key="minSize" type="size" width="450" height="150"/>
+            <view key="contentView" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6">
+                <rect key="frame" x="0.0" y="0.0" width="600" height="496"/>
                 <subviews>
                     <stackView distribution="fill" orientation="vertical" alignment="leading" horizontalStackHuggingPriority="249.99998474121094" verticalStackHuggingPriority="249.99998474121094" detachesHiddenViews="YES" translatesAutoresizingMaskIntoConstraints="NO" id="61v-5k-OXp">
-                        <rect key="frame" x="0.0" y="0.0" width="680" height="381"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="496"/>
                         <subviews>
                             <customView translatesAutoresizingMaskIntoConstraints="NO" id="cGD-9V-Gym" userLabel="Title View">
-                                <rect key="frame" x="0.0" y="317" width="680" height="64"/>
+                                <rect key="frame" x="0.0" y="432" width="600" height="64"/>
                                 <subviews>
                                     <imageView translatesAutoresizingMaskIntoConstraints="NO" id="F1L-zh-U8Z" userLabel="Program icon">
                                         <rect key="frame" x="20" y="0.0" width="64" height="64"/>
@@ -50,10 +49,10 @@
                                         </connections>
                                     </imageView>
                                     <customView translatesAutoresizingMaskIntoConstraints="NO" id="UU2-7C-LCJ" userLabel="Version &amp; Question view">
-                                        <rect key="frame" x="92" y="13" width="568" height="38"/>
+                                        <rect key="frame" x="92" y="13" width="488" height="38"/>
                                         <subviews>
                                             <textField focusRingType="none" verticalHuggingPriority="750" horizontalCompressionResistancePriority="1000" translatesAutoresizingMaskIntoConstraints="NO" id="Nvn-Dp-hAH" userLabel="Version text field">
-                                                <rect key="frame" x="-2" y="22" width="572" height="16"/>
+                                                <rect key="frame" x="-2" y="22" width="492" height="16"/>
                                                 <textFieldCell key="cell" lineBreakMode="truncatingTail" allowsUndo="NO" sendsActionOnEndEditing="YES" title="Version title" usesSingleLineMode="YES" id="f6r-wP-EYG">
                                                     <font key="font" metaFont="systemBold"/>
                                                     <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
@@ -64,7 +63,7 @@
                                                 </connections>
                                             </textField>
                                             <textField focusRingType="none" verticalHuggingPriority="999" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" preferredMaxLayoutWidth="490" translatesAutoresizingMaskIntoConstraints="NO" id="WdU-eY-Ta9" userLabel="Question text field">
-                                                <rect key="frame" x="-2" y="0.0" width="572" height="14"/>
+                                                <rect key="frame" x="-2" y="0.0" width="492" height="14"/>
                                                 <textFieldCell key="cell" allowsUndo="NO" sendsActionOnEndEditing="YES" title="Question" id="Jsa-P1-mWz">
                                                     <font key="font" metaFont="smallSystem"/>
                                                     <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
@@ -96,18 +95,18 @@
                                 </constraints>
                             </customView>
                             <box boxType="custom" cornerRadius="4" title="Box" translatesAutoresizingMaskIntoConstraints="NO" id="ikY-gb-bgB" userLabel="Release Notes Box">
-                                <rect key="frame" x="20" y="74" width="640" height="235"/>
+                                <rect key="frame" x="20" y="74" width="560" height="350"/>
                                 <view key="contentView" id="YbC-Ky-Aam" userLabel="Release Notes Content View">
-                                    <rect key="frame" x="1" y="1" width="638" height="233"/>
+                                    <rect key="frame" x="1" y="1" width="558" height="348"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 </view>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="235" placeholder="YES" id="MvR-0E-bDS"/>
+                                    <constraint firstAttribute="height" constant="350" placeholder="YES" id="MvR-0E-bDS"/>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" priority="999" constant="200" id="g5s-9E-8SF"/>
                                 </constraints>
                             </box>
                             <customView translatesAutoresizingMaskIntoConstraints="NO" id="Dg5-0U-d14" userLabel="Options view">
-                                <rect key="frame" x="0.0" y="52" width="680" height="14"/>
+                                <rect key="frame" x="0.0" y="52" width="600" height="14"/>
                                 <subviews>
                                     <button verticalHuggingPriority="1000" verticalCompressionResistancePriority="1000" translatesAutoresizingMaskIntoConstraints="NO" id="xYY-q8-ZyN">
                                         <rect key="frame" x="20" y="0.0" width="313" height="14"/>
@@ -128,10 +127,10 @@
                                 </constraints>
                             </customView>
                             <customView translatesAutoresizingMaskIntoConstraints="NO" id="iUh-Md-dRX" userLabel="Choices view">
-                                <rect key="frame" x="0.0" y="0.0" width="680" height="44"/>
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
                                 <subviews>
                                     <button horizontalHuggingPriority="150" verticalHuggingPriority="750" horizontalCompressionResistancePriority="997" translatesAutoresizingMaskIntoConstraints="NO" id="uGk-Ks-HQR">
-                                        <rect key="frame" x="395" y="20" width="127" height="24"/>
+                                        <rect key="frame" x="315" y="20" width="127" height="24"/>
                                         <buttonCell key="cell" type="push" title="Remind Me Later" bezelStyle="rounded" alignment="center" borderStyle="border" inset="2" id="G8s-oM-9gf">
                                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                             <font key="font" metaFont="system"/>
@@ -148,7 +147,7 @@ Gw
                                         </connections>
                                     </button>
                                     <button horizontalHuggingPriority="20" verticalHuggingPriority="750" horizontalCompressionResistancePriority="1000" translatesAutoresizingMaskIntoConstraints="NO" id="sUq-y0-gA3">
-                                        <rect key="frame" x="534" y="20" width="126" height="24"/>
+                                        <rect key="frame" x="454" y="20" width="126" height="24"/>
                                         <buttonCell key="cell" type="push" title="Install Update" bezelStyle="rounded" alignment="center" state="on" borderStyle="border" inset="2" id="IIY-s3-hkz">
                                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                             <font key="font" metaFont="system"/>
@@ -198,6 +197,7 @@ DQ
                             <constraint firstAttribute="trailing" secondItem="iUh-Md-dRX" secondAttribute="trailing" id="fly-DF-xg8"/>
                             <constraint firstAttribute="trailing" secondItem="ikY-gb-bgB" secondAttribute="trailing" constant="20" symbolic="YES" id="gyA-Og-04f"/>
                             <constraint firstItem="ikY-gb-bgB" firstAttribute="leading" secondItem="61v-5k-OXp" secondAttribute="leading" constant="20" symbolic="YES" id="zdI-MC-GvM"/>
+                            <constraint firstAttribute="width" constant="600" placeholder="YES" id="zhw-Sh-vuA"/>
                             <constraint firstItem="Dg5-0U-d14" firstAttribute="leading" secondItem="61v-5k-OXp" secondAttribute="leading" id="zjt-Mp-9hy"/>
                         </constraints>
                         <visibilityPriorities>
@@ -224,7 +224,7 @@ DQ
             <connections>
                 <outlet property="delegate" destination="-2" id="50"/>
             </connections>
-            <point key="canvasLocation" x="602" y="352"/>
+            <point key="canvasLocation" x="424" y="395"/>
         </window>
         <userDefaultsController representsSharedInstance="YES" id="93" userLabel="Shared Defaults"/>
     </objects>
